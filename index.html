@@ -11,6 +11,7 @@
     .hero, .card { background: #fff; border-radius: 18px; box-shadow: 0 8px 28px rgba(15, 23, 42, 0.06); }
     .hero { padding: 22px 24px; margin-bottom: 18px; }
     .card { padding: 18px; }
+    .section { margin-top: 16px; }
     .grid { display: grid; gap: 16px; }
     .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .muted { color: #6b7280; font-size: 14px; }
@@ -38,7 +39,7 @@
   <div class="wrap">
     <div class="hero">
       <h1 style="margin:0 0 10px;">OpenClaw 每日A股简报</h1>
-      <div class="muted">日期：2026-04-21 ｜ 类型：盘后简报 ｜ 数据截至：2026-04-21 收盘 ｜ 更新于 22:07</div>
+      <div class="muted">日期：2026-04-21 ｜ 类型：盘后简报 ｜ 数据截至：2026-04-21 收盘 ｜ 更新于 22:30</div>
       <p style="margin-top:12px; line-height:1.8;">截至4月21日收盘，A股整体是温和修复，先看承接。重点不是指数红不红，而是高弹性方向有没有得到成交量确认。</p>
       <div class="note" style="margin: 12px 0;">现在已经进入收盘后，所以页面按 2026-04-21 的收盘结果复盘。</div>
       <p class="small"><strong>生成框架：</strong>这份简报按固定盘后模板生成：一句话总结 -> 指数和池子强弱 -> 驱动 -> 为什么这样走 -> 明天看什么 -> 风险提醒。</p>
@@ -47,38 +48,55 @@
       <span class="pill">图表下面直接给数据</span>
     </div>
 
-    <div class="grid grid-2">
-      <div class="card">
-        <div class="section-title"><h2 style="margin:0;">隔夜最重要的三件事</h2></div>
-        
-        <div class="event">
-          <p class="small"><strong>发生了什么：</strong>机构认为外围扰动对A股传导在钝化，科技主线热度仍有延续可能</p>
-          <p class="small"><strong>会影响什么：</strong>更容易影响成长风格和高弹性板块的承接强度。</p>
-          <p class="small"><strong>今天意味着什么：</strong>重点看半导体和机器人能不能放量续强，而不是只高开一下。</p>
-        </div>
-        
-        <div class="event">
-          <p class="small"><strong>发生了什么：</strong>美股科技继续偏强，容易改善A股成长方向的开盘情绪</p>
-          <p class="small"><strong>会影响什么：</strong>更容易影响成长风格和高弹性板块的承接强度。</p>
-          <p class="small"><strong>今天意味着什么：</strong>重点看半导体和机器人能不能放量续强，而不是只高开一下。</p>
-        </div>
-        
-        <div class="event">
-          <p class="small"><strong>发生了什么：</strong>华尔街见闻 首页 · 资讯 · 股票 · 债券 · 商品 · 外汇 · 公司 · 硬AI · 快讯 · 会员 · VIP</p>
-          <p class="small"><strong>会影响什么：</strong>它更像情绪变量，是否会传到A股，要看开盘后有没有真实资金响应。</p>
-          <p class="small"><strong>今天意味着什么：</strong>只把它当验证点，不把标题本身当交易依据。</p>
-        </div>
-        
-        <p class="small"><strong>总解释：</strong>隔夜消息只是线索，不是结论。真正有用的是看它会不会通过板块预期、资金偏好和量价结构，在开盘后被验证。</p>
+    <div class="card section">
+      <div class="section-title"><h2 style="margin:0;">政策与监管</h2></div>
+      
+      <div class="event">
+        <p class="small"><strong>发生了什么：</strong>华尔街见闻 首页 · 资讯 · 股票 · 债券 · 商品 · 外汇 · 公司 · 硬AI · 快讯 · 会员 · VIP</p>
+        <p class="small"><strong>为什么重要：</strong>这是政策或监管层变量，通常先改变行业预期，再影响板块偏好和资金分配。</p>
+        <p class="small"><strong>影响哪些部分：</strong>它更像情绪变量，是否会传到A股，要看开盘后有没有真实资金响应。</p>
+        <p class="small"><strong>我的推论：</strong>如果后续还有细则或资金承接，这类变量更容易从口号变成主线；如果只有表态没有兑现，更多停留在情绪层。</p>
+        <p class="small"><strong>推论依据来源：</strong>推论依据：政策/监管线索 + 历史盘面传导，来源 wallstreetcn.com。</p>
+        <p class="small"><strong>来源：</strong>wallstreetcn.com (https://wallstreetcn.com/)</p>
+        <p class="small"><strong>如何验证：</strong>只把它当验证点，不把标题本身当交易依据。</p>
       </div>
-      <div class="card">
-        <div class="section-title"><h2 style="margin:0;">盘面强弱与今天先盯什么</h2></div>
-        <p class="small"><strong>上一交易日盘面强弱：</strong>上一交易日看强弱，主题产业池近20日 +11.55%。其中成长赛道池近20日 +9.64%，核心配置池近20日 +6.66%。再往标的看，半导体ETF近20日 +14.74%，强于黄金ETF近20日 +11.96%。这说明进攻方向更有斜率，但防守资金还没完全退场。</p>
-        <p class="small"><strong>影响路径：</strong>今天的影响路径先按这条线看，事件层先改变预期，预期再影响资金偏好，最后落到开盘后的量价验证。当前最值得验证的是：更容易影响成长风格和高弹性板块的承接强度。</p>
-        <ul class="list"><li>半导体ETF 能不能继续放量，不是只高开一下。</li><li>创业板和强势ETF有没有同步承接，这决定修复是不是只停在口头上。</li><li>黄金ETF 会不会继续偏强，这能判断防守资金有没有真正撤退。</li></ul>
-        <p class="small"><strong>今天最容易犯的错：</strong>最容易犯的错，是把一天的结果直接外推成明天必然延续。先看驱动有没有被新数据继续验证。</p>
-        <p class="small"><strong>术语学习：</strong>风险偏好，就是资金今天愿不愿意去做波动更大、弹性更高的方向。现在它在修复，但还没到可以无脑追高的程度。</p>
+      
+      <p class="small"><strong>总解释：</strong>隔夜消息只是线索，不是结论。真正有用的是把政策、国际变量和盘面强弱串成影响链，再看它会不会被量价和相对强弱验证。</p>
+    </div>
+
+    <div class="card section">
+      <div class="section-title"><h2 style="margin:0;">国际与海外市场</h2></div>
+      
+      <div class="event">
+        <p class="small"><strong>发生了什么：</strong>机构认为外围扰动对A股传导在钝化，科技主线热度仍有延续可能</p>
+        <p class="small"><strong>为什么重要：</strong>这是海外变量，通常先影响全球风险偏好、利率和商品，再传导到A股风格。</p>
+        <p class="small"><strong>影响哪些部分：</strong>更容易影响成长风格和高弹性板块的承接强度。</p>
+        <p class="small"><strong>我的推论：</strong>如果海外风险偏好继续改善，成长风格更容易受益；如果避险资产同步偏强，A股里黄金和防守板块通常更占优。</p>
+        <p class="small"><strong>推论依据来源：</strong>推论依据：海外市场新闻 + A股风格联动，来源 finance.sina.com.cn。</p>
+        <p class="small"><strong>来源：</strong>finance.sina.com.cn (https://finance.sina.com.cn/wm/2026-04-19/doc-inhuzxau4446575.shtml)</p>
+        <p class="small"><strong>如何验证：</strong>重点看半导体和机器人能不能放量续强，而不是只高开一下。</p>
       </div>
+      
+      <div class="event">
+        <p class="small"><strong>发生了什么：</strong>美股科技继续偏强，容易改善A股成长方向的开盘情绪</p>
+        <p class="small"><strong>为什么重要：</strong>这是海外变量，通常先影响全球风险偏好、利率和商品，再传导到A股风格。</p>
+        <p class="small"><strong>影响哪些部分：</strong>更容易影响成长风格和高弹性板块的承接强度。</p>
+        <p class="small"><strong>我的推论：</strong>如果海外风险偏好继续改善，成长风格更容易受益；如果避险资产同步偏强，A股里黄金和防守板块通常更占优。</p>
+        <p class="small"><strong>推论依据来源：</strong>推论依据：海外市场新闻 + A股风格联动，来源 finance.sina.com.cn。</p>
+        <p class="small"><strong>来源：</strong>finance.sina.com.cn (https://finance.sina.com.cn/wm/2026-04-18/doc-inhuwwya1573664.shtml?froms=ggmp)</p>
+        <p class="small"><strong>如何验证：</strong>重点看半导体和机器人能不能放量续强，而不是只高开一下。</p>
+      </div>
+      
+    </div>
+
+    <div class="card section">
+      <div class="section-title"><h2 style="margin:0;">盘面强弱与今天先盯什么</h2></div>
+      <p class="small"><strong>上一交易日盘面强弱：</strong>上一交易日看强弱，主题产业池近20日 +11.55%。其中成长赛道池近20日 +9.64%，核心配置池近20日 +6.66%。再往标的看，半导体ETF近20日 +14.74%，强于黄金ETF近20日 +11.96%。这说明进攻方向更有斜率，但防守资金还没完全退场。</p>
+      <p class="small"><strong>影响路径：</strong>今天的影响路径先按这条线看，事件层先改变预期，预期再影响资金偏好，最后落到开盘后的量价验证。当前最值得验证的是：更容易影响成长风格和高弹性板块的承接强度。</p>
+      <p class="small"><strong>今天更值得先看哪个池子：</strong>今天先看成长赛道池。因为当前已覆盖样本里，半导体ETF的20日和5日强度都更占优，而黄金ETF更适合当防守对照，不适合直接替代进攻主线。</p>
+      <ul class="list"><li>半导体ETF 能不能继续放量，不是只高开一下。</li><li>创业板和强势ETF有没有同步承接，这决定修复是不是只停在口头上。</li><li>黄金ETF 会不会继续偏强，这能判断防守资金有没有真正撤退。</li></ul>
+      <p class="small"><strong>今天最容易犯的错：</strong>最容易犯的错，是把一天的结果直接外推成明天必然延续。先看驱动有没有被新数据继续验证。</p>
+      <p class="small"><strong>术语学习：</strong>风险偏好，就是资金今天愿不愿意去做波动更大、弹性更高的方向。现在它在修复，但还没到可以无脑追高的程度。</p>
     </div>
 
     <div class="grid grid-2" style="margin-top:16px;">
@@ -144,17 +162,17 @@
     </div>
 
     <div class="card" style="margin-top:16px;">
-      <div class="section-title"><h2 style="margin:0;">候选方向与观察标的</h2></div>
-      <div class="note" style="margin-bottom:12px;">候选不是随便塞名字，而是先按你的池子逻辑分成进攻验证、主题跟踪、防守对照。没有稳定数据代理的方向，今天先不硬写。</div>
+      <div class="section-title"><h2 style="margin:0;">候选股 A / B / C</h2></div>
+      <div class="note" style="margin-bottom:12px;">先定今天更值得看的池子，再做 A / B / C 分档。没有讲清前因后果的方向，宁可不进榜，也不硬塞名字。</div>
       <table class="table">
-        <thead><tr><th>角色</th><th>标的</th><th>为什么今天是它</th><th>依据</th><th>技术面</th><th>风险</th></tr></thead>
+        <thead><tr><th>档位</th><th>标的</th><th>为什么今天是它</th><th>依据与反面可能</th><th>技术面</th><th>最大风险</th></tr></thead>
         <tbody>
         
-          <tr><td>A 进攻验证</td><td>半导体ETF</td><td>它是今天最值得先看承接的进攻方向，因为近20日和近5日强度都排在已覆盖成长池前面。</td><td>数据证据：近5日 +1.68%，近20日 +14.74%。对比证据：都强于沪深300ETF近20日 +7.81%，说明不是只靠一天脉冲。</td><td>还站在MA20上方，但中期趋势没有完全拉开，追高要克制。</td><td>如果只是高开不放量，强势很容易在第一小时被兑现。</td></tr>
+          <tr><td>A档 值得深看</td><td>半导体ETF</td><td>人话结论：今天最值得深看的，是半导体ETF所在的进攻方向。专业说法：它在已覆盖成长样本里相对强弱领先，属于优先验证的主攻池。核心催化剂：先进制造和成长风格承接。最大风险：冲高但不放量。更适合：主题仓/观察仓。</td><td>依据1，数据证据：近5日 +1.68%，近20日 +14.74%。这说明它不是只靠一天脉冲。依据2，对比证据：强于沪深300ETF近20日 +7.81%。这说明主动资金更愿意往这边走。反面可能：如果今天量能跟不上，强势会很快退化成冲高回落。置信度：中。</td><td>趋势状态：还站在MA20上方。相对强弱：中等偏强。技术面结论：结构没坏，但需要量能确认。</td><td>最大风险是情绪先行、量能落空，一旦开盘承接不足，A档会立刻降级成观察项。</td></tr>
         
-          <tr><td>B 主题跟踪</td><td>机器人ETF</td><td>它不是因为想象空间大就上榜，而是因为它能代表当前已覆盖主题方向的真实承接情况。</td><td>数据证据：近5日 +2.11%，近20日 +11.55%。情绪/对比证据：如果它连昨天的强弱都保不住，主题方向大概率还是情绪多、趋势少。</td><td>还站在MA20上方，但中期趋势没有完全拉开，追高要克制。</td><td>主题方向最怕高位分歧，一旦量能跟不上，回撤通常比宽基更快。</td></tr>
+          <tr><td>B档 可以观察</td><td>机器人ETF</td><td>人话结论：它值得观察，但今天不该直接抬到最高优先级。专业说法：它更适合作为主题方向的跟踪样本，而不是主攻核心。核心催化剂：主题热度和事件驱动。最大风险：高位分歧。更适合：主题仓。</td><td>依据1，数据证据：近5日 +2.11%，近20日 +11.55%。这说明主题还有活跃度。依据2，对比证据：如果它连昨天的强弱都保不住，主题方向大概率还是情绪多、趋势少。反面可能：题材越热，回撤也越快。置信度：中。</td><td>趋势状态：还站在MA20上方。相对强弱：中等偏强。技术面结论：结构没坏，但需要量能确认。</td><td>它最大的问题是持续性不稳定，尤其怕高位放量滞涨。</td></tr>
         
-          <tr><td>C 防守对照</td><td>黄金ETF</td><td>它不是主推买入，而是拿来判断市场到底是真进攻，还是表面热闹但资金还在留后手。</td><td>数据证据：近5日 -0.01%，近20日 +11.96%。对比证据：如果进攻方向走强时它还同步偏强，说明防守资金没有真正撤退。</td><td>还站在MA20上方，但中期趋势没有完全拉开，追高要克制。</td><td>如果风险偏好突然明显升温，防守对照组短线会自然跑输。</td></tr>
+          <tr><td>C档 先回避或仅作对照</td><td>黄金ETF</td><td>人话结论：它今天更适合拿来做市场温度计，不适合当主推方向。专业说法：这是防守对照组，用来判断风险偏好有没有真正回升。核心催化剂：避险需求。最大风险：风险偏好突然升温时自然跑输。更适合：对冲仓/观察仓。</td><td>依据1，数据证据：近5日 -0.01%，近20日 +11.96%。依据2，对比证据：如果进攻方向走强时它还同步偏强，说明防守资金没有真正撤退。反面可能：如果风险偏好全面修复，它会自然落后。置信度：中。</td><td>趋势状态：还站在MA20上方。相对强弱：中等偏强。技术面结论：结构没坏，但需要量能确认。</td><td>如果把它误读成主线，很容易错过真正的进攻验证方向。</td></tr>
         
         </tbody>
       </table>
