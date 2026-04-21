@@ -11,6 +11,6 @@ This folder is the static publish root for the A-share daily report.
 - Output directory: `public`
 
 Stable public URL:
-- https://openclawreport.jiang1008yan.workers.dev/
+- https://daily-a-share-report-public.jiang1008yan.workers.dev/
 
 Reuse this public URL and let the daily cron send that URL to WeChat.
